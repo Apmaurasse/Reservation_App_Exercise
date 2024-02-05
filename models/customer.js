@@ -53,6 +53,19 @@ class Customer {
     return new Customer(customer);
   }
 
+
+  //Part Five, function to retun full name joined by a space. */
+
+  get fullName() {
+    const firstName = this.firstName || '';
+    const lastName = this.lastName || '';
+    return `${firstName} ${lastName}`.trim();
+  }
+
+
+
+
+
   /** get all reservations for this customer. */
 
   async getReservations() {
